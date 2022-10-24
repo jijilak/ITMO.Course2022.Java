@@ -3,8 +3,7 @@ package ITMO.Laboratory2;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws Exception {
-
+    /*public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         Calculator cator = new Calculator();
         System.out.println("Введите первую цифру");
@@ -24,5 +23,17 @@ public class Main {
         System.out.println("Вычитание");
         double subtraction1 = cator.subtraction(a, b);
         System.out.println(subtraction1);
+    }*/
+    public static void main(String[] args){
+        Friend friend1 = new Friend();
+        Friend friend2 = new Friend("Morgan");
+        Friend friend3 = new Friend("Ann", 1988);
+        Friend friend4 = new Friend("Alex", 1989, "serious");
+        Friend friend5 = new Friend("Dima", 1982, "kind", "casual");
+
+        System.out.println(friend4.getName());
+        System.out.println(friend4.getBday());
+        System.out.println(friend4.getCharacter());
+        System.out.println(friend4.getStyle());
     }
 }
