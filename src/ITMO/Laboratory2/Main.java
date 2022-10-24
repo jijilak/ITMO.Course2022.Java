@@ -11,6 +11,13 @@ public class Main {
         System.out.println("Введите вторую цифру");
         int b = sc.nextInt();
         Calculator cator = new Calculator();
+        System.out.println("Сумма");
+        System.out.println(cator.sum (a, b));
+        System.out.println("Деление");
+        System.out.println(cator.division (a, b));
+        System.out.println("Умножение");
         System.out.println(cator.multiplication (a, b));
+        System.out.println("Вычитание");
+        System.out.println(cator.subtraction (a, b));
     }
 }
