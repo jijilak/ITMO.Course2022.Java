@@ -12,17 +12,15 @@ public double sum (double a, double b){
     return (a + b);
 }
     /*Деление*/
-    public int division (int a, int b) {
+    public double division (int a, int b) {
         int result = (a / b);
         return result;
     }
-    public long division  (long a, long b) {
-        long result = (a / b);
-        return result;
+    public double division  (long a, long b) {
+        return a*1.0 / b;
     }
     public double division  (double a, double b) {
-        double result = (a / b);
-        return result;
+        return  a*1.0 / b;
     }
     /*Умножение*/
     public int multiplication (int a, int b) {

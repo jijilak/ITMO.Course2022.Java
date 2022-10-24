@@ -3,13 +3,13 @@ package ITMO.Laboratory2;
 import java.util.Scanner;
 
 public class Main {
-    /*public static void main(String[] args) throws Exception {
+    public static void main(String[] args) /*throws Exception*/ {
         Scanner sc = new Scanner(System.in);
         Calculator cator = new Calculator();
-        System.out.println("Введите первую цифру");
-        int a = sc.nextInt();
-        System.out.println("Введите вторую цифру");
-        int b = sc.nextInt();
+        System.out.println("Введите первое целое число");
+        double a = sc.nextInt();
+        System.out.println("Введите второе целое число");
+        double b = sc.nextInt();
 
         System.out.println("Сумма");
         double sum1 = cator.sum(a, b);
@@ -23,8 +23,8 @@ public class Main {
         System.out.println("Вычитание");
         double subtraction1 = cator.subtraction(a, b);
         System.out.println(subtraction1);
-    }*/
-    public static void main(String[] args){
+    }
+   /* public static void main(String[] args){
         Friend friend1 = new Friend();
         Friend friend2 = new Friend("Morgan");
         Friend friend3 = new Friend("Ann", 1988);
@@ -35,5 +35,5 @@ public class Main {
         System.out.println(friend4.getBday());
         System.out.println(friend4.getCharacter());
         System.out.println(friend4.getStyle());
-    }
+    }*/
 }
