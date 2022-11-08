@@ -13,8 +13,7 @@ public double sum (double a, double b){
 }
     /*Деление*/
     public double division (int a, int b) {
-        int result = (a / b);
-        return result;
+        return  a*1.0 / b;
     }
     public double division  (long a, long b) {
         return a*1.0 / b;
