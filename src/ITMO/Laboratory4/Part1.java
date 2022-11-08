@@ -6,6 +6,8 @@ public class Part1 {
         //P1Ex2();
        // P1Ex3();
         //P1Ex4();
+        //P1Ex5();
+        //P1Ex6();
     }
     //P1Ex1
     public static  void  P1Ex1(String[] args){
