@@ -1,19 +1,19 @@
 package ITMO.Laboratory3;
 
 class Study {
-    private  String course;
-    //TODO
+    private String course;
+    Study (String course) {
+        this.course = course;
+    }
     public String printCourse() {
-
         return  this.course;
     }
-    public Study () {
-
-        course = "Изучение Java - это просто!";
-    }
 }
-class  JavaProgramm {
+
+class JavaProgramm {
     public static void main(String[] args) {
-       //TODO
-         }
+        //String course = "Изучение Java - это просто!";
+        Study study1 = new Study("Изучение Java - это проSSSSSSSто!");
+        System.out.println(study1.printCourse());
+    }
 }
