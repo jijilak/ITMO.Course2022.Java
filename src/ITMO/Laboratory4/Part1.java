@@ -37,7 +37,7 @@ public class Part1 {
             c += 15;
         }
     }
-    private static void P1Ex3() {
+    private static boolean P1Ex3() {
 
     }
 }
