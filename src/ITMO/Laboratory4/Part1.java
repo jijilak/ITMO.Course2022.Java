@@ -7,7 +7,7 @@ public class Part1 {
         P1Ex1();
         P1Ex2();
         P1Ex3();
-        //P1Ex4();
+        P1Ex4();
         //P1Ex5();
         //P1Ex6();
     }
@@ -53,5 +53,8 @@ public class Part1 {
         else {
             System.out.println("Результат: сумма не равна третьему целому числу!");
         }
+    }
+    private static void P1Ex4() {
+
     }
 }
