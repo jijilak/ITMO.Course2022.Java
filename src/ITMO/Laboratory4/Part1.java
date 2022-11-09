@@ -1,5 +1,7 @@
 package ITMO.Laboratory4;
 
+import java.util.Scanner;
+
 public class Part1 {
     public static  void  main(String[] args) {
         P1Ex1();
@@ -37,7 +39,19 @@ public class Part1 {
             c += 15;
         }
     }
-    private static boolean P1Ex3() {
-
+    private static void P1Ex3() {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Введите первое число: ");
+        int a = in.nextInt();
+        System.out.println("Введите второе число: ");
+        int b = in.nextInt();
+        System.out.println("Введите третье число: ");
+        int c = in.nextInt();
+        if (a + b == c){
+            System.out.println("Результат: true");
+        }
+        else {
+            System.out.println("Результат: сумма не равна третьему целому числу!");
+        }
     }
 }
