@@ -55,6 +55,12 @@ public class Part1 {
         }
     }
     private static void P1Ex4() {
-
+        int[] array = new int[] {-3, 1, 5, 8, 9, 3};
+        if (array[0] == 3 || array[array.length - 1] == 3){
+            System.out.println("array = -3, 1, 5, 8, 9, 3 \ntrue");
+        }
+        else {
+            System.out.println("array = -3, 1, 5, 8, 9 \nfalse");
+        }
     }
 }
