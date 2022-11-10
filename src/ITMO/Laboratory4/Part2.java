@@ -7,10 +7,11 @@ public class Part2 {
     public static void main(String[] args) {
         int[] arrayA = new int[]{1, 3, 7, 5, 6, 2};
         int[] arrayB = new int[]{1, 4, 6, 8, 9};
+        int[] arrayC = new int[]{5, 6, 7, 2};
         P2Ex1a(arrayA);
         P2Ex1b(arrayB);
         P2Ex2();
-        P2Ex3();
+        P2Ex3(arrayC);
         P2Ex4();
         P2Ex5();
         P2Ex6();
@@ -79,7 +80,7 @@ public class Part2 {
         int arrayLength = scan.nextInt();
         int[] array = new int[arrayLength];
         int i = 0;
-        while ( i < arrayLength) {
+        while (i < arrayLength) {
             System.out.println("Вводите целые числа массива: ");
             int a = scan.nextInt();
             array[i] = a;
@@ -93,30 +94,41 @@ public class Part2 {
         System.out.println("Result: " + Arrays.toString(array));
     }
 
-    public static void P2Ex3() {
+    public static void P2Ex3(int[] arrayC) {
         /*Напишите метод, который меняет местами первый и
         последний элемент массива.
         Пример вывода:
         Array 1: [5, 6, 7, 2]
         Array 2: [2, 6, 7, 5]
         */
-
+        int a = arrayC[0];
+        int b = arrayC[arrayC.length - 1];
+        System.out.println("Array 1: " + Arrays.toString(arrayC));
+        arrayC[0] = b;
+        arrayC[arrayC.length - 1] = a;
+        System.out.println("Array 2: " + Arrays.toString(arrayC));
+        //for (int i : arrayC) {
+            //System.out.println("Array 2: [" + arrayC[3] + ", " + arrayC[1] + ", " + arrayC[2] + ", " + arrayC[0] + "]");
+    //}
     }
+
     public static void P2Ex4() {
         /*Дан массив чисел. Найдите первое уникальное в этом массиве число.
 Например, для массива [1, 2, 3, 1, 2, 4] это число 3.
          */
 
     }
+
     public static void P2Ex5() {
         /*Заполните массив случайным числами и отсортируйте его.
         Используйте сортировку слиянием.
          */
 
     }
+
     public static void P2Ex6() {
         /* ***Прочитать главы 1-4 “Грокаем алгоритмы”
-        *опционально
+         *опционально
          */
     }
 }
