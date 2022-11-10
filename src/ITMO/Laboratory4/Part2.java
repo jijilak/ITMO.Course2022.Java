@@ -8,7 +8,7 @@ public class Part2 {
         int[] arrayA = new int[]{1, 3, 7, 5, 6, 2};
         int[] arrayB = new int[]{1, 4, 6, 8, 9};
         int[] arrayC = new int[]{5, 6, 7, 2};
-        int[] arrayD = new int[] {1, 2, 3, 1, 2, 4};
+        int[] arrayD = new int[]{1, 2, 3, 1, 2, 4};
         P2Ex1a(arrayA);
         P2Ex1b(arrayB);
         P2Ex2();
@@ -76,7 +76,7 @@ public class Part2 {
         Result: [5, 6, 7, 2]
         */
         Scanner scan = new Scanner(System.in);
-        Scanner date = new Scanner(System.in);
+        //Scanner date = new Scanner(System.in);
         System.out.println("Введите длину массива: ");
         int arrayLength = scan.nextInt();
         int[] array = new int[arrayLength];
@@ -109,16 +109,28 @@ public class Part2 {
         arrayC[arrayC.length - 1] = first;
         System.out.println("Array 2: " + Arrays.toString(arrayC));
         //for (int i : arrayC) {
-            //System.out.println("Array 2: [" + arrayC[3] + ", " + arrayC[1] + ", " + arrayC[2] + ", " + arrayC[0] + "]");
-    //}
+        //System.out.println("Array 2: [" + arrayC[3] + ", " + arrayC[1] + ", " + arrayC[2] + ", " + arrayC[0] + "]");
+        //}
     }
 
     public static void P2Ex4(int[] arrayD) {
         /*Дан массив чисел. Найдите первое уникальное в этом массиве число.
 Например, для массива [1, 2, 3, 1, 2, 4] это число 3.
          */
-
-
+        System.out.println("Array: " + Arrays.toString(arrayD));
+        int result = 0;
+        for (int first : arrayD) {
+            for (int second : arrayD) {
+                if (first == second) {
+                    result++;
+                }
+            }
+            if (result == 1) {
+                System.out.println("true: Первое уникальное в этом массиве число [" + first + "]");
+                break;
+            }
+            result = 0;
+        }
     }
 
     public static void P2Ex5() {
