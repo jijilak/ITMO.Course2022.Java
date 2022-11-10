@@ -8,11 +8,12 @@ public class Part2 {
         int[] arrayA = new int[]{1, 3, 7, 5, 6, 2};
         int[] arrayB = new int[]{1, 4, 6, 8, 9};
         int[] arrayC = new int[]{5, 6, 7, 2};
+        int[] arrayD = new int[] {1, 2, 3, 1, 2, 4};
         P2Ex1a(arrayA);
         P2Ex1b(arrayB);
         P2Ex2();
         P2Ex3(arrayC);
-        P2Ex4();
+        P2Ex4(arrayD);
         P2Ex5();
         P2Ex6();
     }
@@ -101,21 +102,22 @@ public class Part2 {
         Array 1: [5, 6, 7, 2]
         Array 2: [2, 6, 7, 5]
         */
-        int a = arrayC[0];
-        int b = arrayC[arrayC.length - 1];
+        int first = arrayC[0];
+        int last = arrayC[arrayC.length - 1];
         System.out.println("Array 1: " + Arrays.toString(arrayC));
-        arrayC[0] = b;
-        arrayC[arrayC.length - 1] = a;
+        arrayC[0] = last;
+        arrayC[arrayC.length - 1] = first;
         System.out.println("Array 2: " + Arrays.toString(arrayC));
         //for (int i : arrayC) {
             //System.out.println("Array 2: [" + arrayC[3] + ", " + arrayC[1] + ", " + arrayC[2] + ", " + arrayC[0] + "]");
     //}
     }
 
-    public static void P2Ex4() {
+    public static void P2Ex4(int[] arrayD) {
         /*Дан массив чисел. Найдите первое уникальное в этом массиве число.
 Например, для массива [1, 2, 3, 1, 2, 4] это число 3.
          */
+
 
     }
 
