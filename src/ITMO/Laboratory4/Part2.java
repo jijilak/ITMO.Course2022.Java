@@ -137,7 +137,15 @@ public class Part2 {
         /*Заполните массив случайным числами и отсортируйте его.
         Используйте сортировку слиянием.
          */
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите длину массива: ");
+        int arrayLength = scan.nextInt();
+        int[] array = new int[arrayLength];
+        for (int a = 0; a < arrayLength; a++) {
+            array[a] = 0 + (int) (Math.random() * arrayLength);
+        }
+        System.out.println("Массив случайных чисел: ");
+        System.out.println(Arrays.toString(array));
     }
 
     public static void P2Ex6() {
