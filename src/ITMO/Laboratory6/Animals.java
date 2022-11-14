@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Animals {
     private int num;
+    public Scanner in = new Scanner(System.in);
     public void setNum (){
         System.out.println("Введите возраст животного: ");
         Scanner in = new Scanner(System.in);

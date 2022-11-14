@@ -1,7 +1,14 @@
 package ITMO.Laboratory6;
 
 public class Cat extends Animals {
-
+private String name;
+public void  setName(){
+    System.out.println("Введите имя животного: ");
+    name = in.nextLine();
+}
+public String getName(){
+    return name;
+}
     public void printNum(){
         System.out.println("Возраст животного: " + getNum());
     }

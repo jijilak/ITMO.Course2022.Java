@@ -28,6 +28,8 @@ public class Main {
         //Cat cat = new Cat("Пуля");
         Cat cat = new Cat();
         cat.setNum();
+        cat.setName();
+        System.out.println(cat.getName());
         cat.printNum();
     }
 }
