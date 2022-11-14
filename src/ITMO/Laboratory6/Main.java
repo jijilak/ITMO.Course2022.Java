@@ -23,5 +23,11 @@ public class Main {
         Autotruck autotruck = new Autotruck(4000, "Газель", 'б', 110,  6, 5000);
         autotruck.outPut();
         autotruck.newWheels(7);
+
+        //Cat cat = new Cat("Пуля", 7, 4, "кошка");
+        //Cat cat = new Cat("Пуля");
+        Cat cat = new Cat();
+        cat.setNum();
+        cat.printNum();
     }
 }
