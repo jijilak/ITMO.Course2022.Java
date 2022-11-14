@@ -13,6 +13,6 @@ public class Client extends Human {
     }
 
     public String getAll() {
-        return "Имя клиента: " + getName() + "\nФамилия: " + getLastName() + "\nБанк" + getBankName();
+        return "Имя клиента: " + getName() + "\nФамилия: " + getLastName() + "\nБанк: " + getBankName();
     }
 }

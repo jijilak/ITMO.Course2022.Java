@@ -13,6 +13,6 @@ public class EmployeeOfTheBank extends Human {
     }
 
     public String getAll() {
-        return "Имя служащего: " + getName() + "\nФамилия : " + getLastName() + "\nБанк: " + bankName;
+        return "Имя служащего: " + getName() + "\nФамилия: " + getLastName() + "\nБанк: " + bankName;
     }
 }
