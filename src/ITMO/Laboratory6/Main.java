@@ -18,5 +18,10 @@ public class Main {
         System.out.println("Bank: " + employeeOfTheBank.getBankName());
         System.out.println("Name: " + employeeOfTheBank.getName());
         System.out.println("Last name: " + employeeOfTheBank.getLastName());
+
+       // Autotruck autotruck = new Autotruck(4000 + " вес в кг", "Газель" + " - марка", " белый" + " - цвет кузова", 110 + " км/час", 6 + " шт", 5000 + " - максимальная грузоподъёмность в кг");
+        Autotruck autotruck = new Autotruck(4000, "Газель", 'б', 110,  6, 5000);
+        autotruck.outPut();
+        autotruck.newWheels(7);
     }
 }
